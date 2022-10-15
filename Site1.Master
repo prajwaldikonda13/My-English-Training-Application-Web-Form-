@@ -1,0 +1,32 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="My_English_Training_Application_Web_Form_.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" href="Stylesheets/bootstrap.min.css" />
+    <script src="Scripts/jquery.min.js"></script>
+    <script src="Scripts/popper.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="row">
+            <div class="col-md-2 bg-light pr-0 bg-dark">
+                <div class="p-2 border-bottom"><a href="Default.aspx" class="text-white">Default</a></div>
+                <div class="p-2 border-bottom"><a href="Display.aspx" class="text-white">Display</a></div>
+                <div class="p-2 border-bottom"><a href="CRUDlectures.aspx" class="text-white">CRUD LECTURES</a></div>
+                <div class="p-2 border-bottom"><a href="CRUDPhrases.aspx" class="text-white">CRUD PHRASES</a></div>
+                <div class="p-2 border-bottom"><a href="CRUDExamples.aspx" class="text-white">CRUD EXAMPLES</a></div>
+            </div>
+            <div class="col-md-10">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
